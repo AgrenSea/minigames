@@ -5,8 +5,8 @@ execute as @a[tag=HP_attacker] run tag @s remove HP_potato
 execute as @a[tag=dealer] run tag @s remove HP_normal
 execute as @a[tag=HP_dealer] run tag @s add HP_potato
 execute as @a[tag=HP_attacker] run tag @s add HP_normal
-tellraw @a [{selector:"@a[tag=HP_attacker]",color:red},"§b把TNT传给了",{selector:"@a[tag=HP_dealer]",color:"red"}]
-title @a actionbar [{selector:"@a[tag=HP_attacker]",color:red},"§b把TNT传给了你！！！"]
+execute if entity @a[tag=HP_attacker] run tellraw @a [{selector:"@a[tag=HP_attacker]",color:red},"§b把TNT传给了",{selector:"@a[tag=HP_dealer]",color:"red"}]
+execute if entity @a[tag=HP_attacker] run title @a actionbar [{selector:"@a[tag=HP_attacker]",color:red},"§b把TNT传给了你！！！"]
 tag @a remove HP_attacker
 tag @a remove HP_dealer
 tag @a remove HP_detect
