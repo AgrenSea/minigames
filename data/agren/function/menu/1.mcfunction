@@ -7,6 +7,11 @@ tellraw @s[tag=INGAME] [{text:"\
 我不响丸辣！！！", color:"white"}}, click_event:{action:"run_command", command:"/trigger Menu set \
 3"}}]
 
+execute if items entity @s container.* emerald[custom_data~{Menu:1}] run tellraw @s [{text:"\
+获得菜单", color: "light_purple", hover_event:{action:"show_text", value: {text:"\
+点击来补发一个菜单", color:"white"}}, click_event:{action:"run_command", command:"/trigger Menu set \
+-1"}}]
+
 tellraw @s [{text:"\
 小游戏列表", color: "aqua", hover_event:{action:"show_text", value: {text:"\
 点击后显示现有所有小游戏列表", color:"white"}}, click_event:{action:"run_command", command:"/trigger Menu set \
