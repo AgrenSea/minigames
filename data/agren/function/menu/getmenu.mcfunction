@@ -1,0 +1,1 @@
+give @s minecraft:emerald[minecraft:custom_data={Menu:1},minecraft:custom_name=[{text:"菜单",color:green,italic:false}],minecraft:lore=[{text:"手持展开菜单",color:light_purple,italic:false,bold:true}]]
