@@ -1,0 +1,3 @@
+AABBBBB
+
+1ABBBCC
