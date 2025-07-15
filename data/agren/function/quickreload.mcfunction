@@ -1,2 +1,2 @@
-datapack disable "file/agrenpack"
-datapack enable "file/agrenpack"
+datapack disable "file/minigames"
+datapack enable "file/minigames"
